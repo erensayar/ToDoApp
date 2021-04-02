@@ -1,0 +1,63 @@
+$note-border-thickness: 5px;
+$note-border-color: #dddddd;
+$note-border-radius: 5px;
+$note-title-padding: 10px;
+///////////////////////////////////////////
+.note-container {
+    margin: 20px;
+    margin-right: 35px;
+
+    .note-create-date {
+        border-left: $note-border-thickness solid $note-border-color;
+        border-top: $note-border-thickness solid $note-border-color;
+        border-top-left-radius: $note-border-radius;
+        padding: $note-title-padding;
+        text-align: left;
+    }
+    .note-target-date {
+        border-left: $note-border-thickness solid $note-border-color;
+        border-top: $note-border-thickness solid $note-border-color;
+        border-right: $note-border-thickness solid $note-border-color;
+        border-top-right-radius: $note-border-radius;
+        padding: $note-title-padding;
+        text-align: right;
+    }
+    .note-title {
+        border: $note-border-thickness solid $note-border-color;
+        padding: $note-title-padding;
+        text-align: center;
+    }
+    .note-text-area {
+        border-left: $note-border-thickness solid $note-border-color;
+        border-right: $note-border-thickness solid $note-border-color;
+        border-bottom: $note-border-thickness solid $note-border-color;
+        border-bottom-right-radius: $note-border-radius;
+        border-bottom-left-radius: $note-border-radius;
+
+        height: 50vh;
+        textarea {
+            width: 100%;
+            height: 100%;
+            resize: none;
+            font-family: "Special Elite", cursive;
+        }
+    }
+    .note-footer {
+        position: relative;
+        box-shadow: 0 0;
+        padding: 5px 0px;
+        display: flex;
+        svg {
+            margin-right: 5px;
+        }
+        label {
+            margin-bottom: 2px;
+            position: relative;
+            top: 2px;
+        }
+        button {
+            height: 35px;
+            width: 120px;
+        }
+    }
+}

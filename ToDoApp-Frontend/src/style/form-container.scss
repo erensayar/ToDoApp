@@ -1,0 +1,32 @@
+//////////////////////////////////////////////////////////
+/* Container Measure Variables */
+$container-width-lg: 540px;
+$container-width-sm: 400px;
+$container-padding-lg: 20px;
+$container-padding-sm: 10px;
+$container-radius: 3px;
+$container-margin-verticle-lg: 20px;
+$container-margin-verticle-sm: 10px;
+$container-margin-horizontal-sm: 10px;
+
+/* Container Color Variables */
+$container-bg-color: rgb(255, 255, 255);
+//////////////////////////////////////////////////////////
+
+
+.form-container {
+    margin-right: $container-margin-horizontal-sm;
+    margin-left: $container-margin-horizontal-sm;
+    margin-top: $container-margin-verticle-sm;
+    border-top-left-radius: $container-radius;
+    border-top-right-radius: $container-radius;
+    background-color: $container-bg-color;
+    padding: $container-padding-sm;
+    @media (min-width: 576px) {
+        margin-right: auto;
+        margin-left: auto;
+        padding: $container-padding-lg;
+        width: $container-width-lg;
+        margin-top: $container-margin-verticle-lg;
+    }
+}
