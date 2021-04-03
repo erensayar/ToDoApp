@@ -12,7 +12,7 @@ Image Source: https://hub.docker.com/repository/docker/erensayar/todoapp
 
 * Then Run:
 
-        $ sudo docker container run -p <your-choose-port>:8081 --rm <image-name>
+        $ sudo docker container run -p <your-choose-port>:8081 --rm erensayar/todoapp
 
 
 # Requirements
