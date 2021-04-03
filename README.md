@@ -2,9 +2,13 @@
 
 I prepared a docker image on Docker Hub. If you don't want to installations requirements, you can use it quickly docker image.
 
+Image Source: https://hub.docker.com/repository/docker/erensayar/todoapp
+
 * First Of All Get Docker https://docs.docker.com/engine/install/ubuntu/#install-from-a-package (I paste for linux setup. And this method install docker with downloaded packages. If you want you can use another way)
 
-* Download docker image. https://hub.docker.com/repository/docker/erensayar/todoapp
+* Download docker image. 
+        
+        docker pull erensayar/todoapp:latest
 
 * Then Run:
 
