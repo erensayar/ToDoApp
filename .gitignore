@@ -29,6 +29,7 @@ build/
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
+nb-configuration.xml
 
 ### STS ###
 .apt_generated

@@ -1,7 +1,6 @@
 package com.erensayar.todoapp.Service.Implementation;
 
 import com.erensayar.todoapp.Entity.User;
-import com.erensayar.todoapp.Error.ApiError;
 import com.erensayar.todoapp.Repository.UserRepo;
 import com.erensayar.todoapp.Service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,7 +59,7 @@ public class UserService implements IUserService {
     public void updateUser(User user) throws EmptyResultDataAccessException {
         User updatedUser = userRepo.getOne(user.getId());
         updatedUser.setUsername(user.getUsername());
-        updatedUser.setPassword(user.getPassword());
+        updatedUser.setPassword(this.passwordEncoder.encode(user.getPassword()));
         updatedUser.setNote(user.getNote());
         userRepo.save(updatedUser);
     }

@@ -108,14 +108,4 @@ public class ApiController {
         return ResponseEntity.status(HttpStatus.OK).body("NOTE DELETED");
     }
 
-    /*
-    // GET BY NAME
-    //<============================================>
-    // TODO: Response Has Sensitive Data. It should be configure at security conf file. It is not necessary for now.
-    @GetMapping(value = "/getUserByUsername/{name}")
-    @JsonView(Views.Sensitive.class)
-    public Optional<User> getUserByUsername(@PathVariable("name") String name) {
-        return userService.getByUsername(name);
-    }
-    */
 }

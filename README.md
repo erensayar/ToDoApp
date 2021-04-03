@@ -1,12 +1,26 @@
-# Requirements:
+# Prepared Docker Image
+
+I prepared a docker image on Docker Hub. If you don't want to installations requirements, you can use it quickly docker image.
+
+* First Of All Get Docker https://docs.docker.com/engine/install/ubuntu/#install-from-a-package (I paste for linux setup. And this method install docker with downloaded packages. If you want you can use another way)
+
+* Download docker image. https://hub.docker.com/repository/docker/erensayar/todoapp
+
+* Then Run:
+
+        $ sudo docker container run -p <your-choose-port>:8081 --rm <image-name>
+
+
+# Requirements
+
+Backend Requirements
 
 * JDK 1.8 http://jdk.java.net/java-se-ri/8-MR3 (OpenJDK)
 * Maven http://jdk.java.net/java-se-ri/8-MR3
     
 Frontend Ruquirements:
-* Node.js https://nodejs.org/en/download/ 
 
-PS: You don't have to get node.js if you will not developing front side. I already got React App build and put to backend's resource.
+* Node.js https://nodejs.org/en/download/ 
 
 ---
 
@@ -55,8 +69,7 @@ Maven:
         export JAVA_HOME=/${PATH}/${JAVA-MAIN-DIRECTORY}
         export PATH=$JAVA_HOME/bin:$PATH
 
-
-# Build And Run Application: 
+# Build And Run Application
 
 * Get application source code with Git. (You should have git program for run this command or you can just download source code from browser)
 
@@ -71,7 +84,8 @@ Maven:
 
         java -jar target/ToDoApp.jar
         
-# Default Application Configurations:
+
+# Default Application Configurations
 
 * Server Port : 8081
 * Swagger Directory : /swagger-ui.html
@@ -84,18 +98,17 @@ Maven:
     * user1 P4ssword
     * user2 P4ssword...
 
-# I Prepared Requests:
-You can find .har and .json file for import to request program. 
+# I Prepared Requests
+You can find .har and .json file for import to request program. (Authorization information is embedded some files. Check the header.)
 
 Directory: Backend > Requests
 Request Samples:
 
 Some Requests:
+
 ![Requests](/ToDoApp-Backend/Requests/SomeRequestsIMG.PNG) 
 
-# Prepare Docker Image: 
-
-* First Of All Get Docker https://docs.docker.com/engine/install/ubuntu/#install-from-a-package (I paste for linux setup. And this method install docker with downloaded packages. If you want you can use another way)
+# Prepare Docker Image:
 
 * Switch to project directory to access dockerfile and then create docker image.
 
@@ -105,39 +118,28 @@ Some Requests:
 
         $ sudo docker container run -p <your-choose-port>:8081 --rm <image-name>
 
-# Prepared Docker Image:
-
-I prepared a docker image on Docker Hub. You can use it quickly.
-
-hub.docker.com/repository/docker/erensayar/todoapp
-
 # Used Technologies And Softwares
- <a href="https://getbootstrap.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="100" height="100"/> </a> 
- <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="100" height="100"/> </a> <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="100" height="100"/> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="100" height="100"/> </a> <a href="https://www.java.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="100" height="100"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="100" height="100"/> </a> <a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="100" height="100"/> </a> <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="100" height="100"/> </a> <a href="https://sass-lang.com"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="100" height="100"/> </a> 
- <a href="https:/www.spring.io">
-<img src="https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg" height="100" width="300" alt="Spring">
-</a>
-<a href="https://spring.io/projects/spring-boot">
-<img src="https://spring.io/images/projects/spring-boot-7f2e24fb962501672cc91ccd285ed2ba.svg" height="100">
-</a>
-<a href="https://spring.io/projects/spring-data">
-<img src="https://spring.io/images/projects/spring-data-79cc203ed8c54191215a60f9e5dc638f.svg" height="100">
-</a>
-<a class="navbar-brand" href="https://junit.org/junit5/"><img src="https://junit.org/junit5/assets/img/junit5-logo.png" height="100"></a>
-<a href="https://spring.io/projects/spring-security">
-<img src="https://spring.io/images/projects/spring-security-b712a4cdb778e72eb28b8c55ec39dbd1.svg" height="100">
-</a>
-<a href="/"><img src="https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg" height="100" width="300" alt="Swagger Logo">
-</a>
-<a href="./" id="bannerRight"><img src="https://maven.apache.org/images/maven-logo-black-on-white.png" height="100" width="350" alt=""></a>
-<a href="/"><img src="https://redux.js.org/img/redux.svg" height="100" width="100" alt="Redux Logo"></a>
-<a href="/https://hibernate.org/">
-<img alt="Hibernate" height="100" src="https://hibernate.org/images/hibernate-logo.svg" width="300">
-</a> 
-</p>
+<a href="https://getbootstrap.com" > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="100" height="100"/> </a> 
+<a href="https://www.w3schools.com/css/" > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="100" height="100"/> </a> 
+<a href="https://www.docker.com/" > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="100" height="100"/> </a> 
+<a href="https://www.w3.org/html/" > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="100" height="100"/> </a> 
+<a href="https://www.java.com" > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="100" height="100"/> </a> 
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="100" height="100"/> </a> 
+<a href="https://www.linux.org/" > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="100" height="100"/> </a>
+<a href="https://reactjs.org/" > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="100" height="100"/> </a> 
+<a href="https://sass-lang.com"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="100" height="100"/> </a> 
+<a href="https:/www.spring.io"><img src="https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg" height="100" width="300" alt="Spring"></a>
+<a href="https://spring.io/projects/spring-boot"><img src="https://spring.io/images/projects/spring-boot-7f2e24fb962501672cc91ccd285ed2ba.svg" height="100"></a>
+<a href="https://spring.io/projects/spring-data"><img src="https://spring.io/images/projects/spring-data-79cc203ed8c54191215a60f9e5dc638f.svg" height="100"></a>
+<a href="https://junit.org/junit5/"><img src="https://junit.org/junit5/assets/img/junit5-logo.png" height="100"></a>
+<a href="https://spring.io/projects/spring-security"><img src="https://spring.io/images/projects/spring-security-b712a4cdb778e72eb28b8c55ec39dbd1.svg" height="100"></a>
+<a href="https://swagger.io/"><img src="https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg" height="100" width="300" alt="Swagger Logo"></a>
+<a href="https://maven.apache.org/" id="bannerRight"><img src="https://maven.apache.org/images/maven-logo-black-on-white.png" height="100" width="350" alt=""></a>
+<a href="https://redux.js.org/"><img src="https://redux.js.org/img/redux.svg" height="100" width="100" alt="Redux Logo"></a>
+<a href="/https://hibernate.org/"> <img alt="Hibernate" height="100" src="https://hibernate.org/images/hibernate-logo.svg" width="300"></a> 
 
 
-# Application Screenshots:
+# Application Screenshots
 Login:
 ![Login](/ImagesForReadMe/ApplicationSS/Login.PNG) 
 
@@ -159,6 +161,10 @@ Login Error Scenerio 3:
 Login Error Scenerio 4:
 ![LoginError4](/ImagesForReadMe/ApplicationSS/LoginError4.jpg) 
 
+# Frontend Notes
+PS: You don't have to get node.js if you will not developing front side. I already got React App build and put to backend's resource.
+
+PS: If you will developing front side, delete old builded files from backend side (resource/static) then move new builded files same directory. 
 
 # What Needs To Be Fixed?
 * Language Bug From Backend
