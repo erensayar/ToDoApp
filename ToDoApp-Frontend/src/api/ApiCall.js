@@ -24,8 +24,8 @@ export const getAllNote = () => {
   return axios.get("api/getAllNote");
 }
 
-export const getAllNoteJustNoteNameAndId = () => {
-  return axios.get("api/getAllNoteJustNoteNameAndId");
+export const getAllNoteJustNoteNameAndId = (creds) => {
+  return axios.get("api/getAllNoteJustNoteNameAndId",{}, { auth: creds });
 }
 
 export const getUser = (id) => {

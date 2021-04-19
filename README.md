@@ -20,7 +20,7 @@ Image Source: https://hub.docker.com/repository/docker/erensayar/todoapp
 Backend Requirements
 
 * JDK 1.8 http://jdk.java.net/java-se-ri/8-MR3 (OpenJDK)
-* Maven http://jdk.java.net/java-se-ri/8-MR3
+* Maven https://maven.apache.org/download.cgi
     
 Frontend Ruquirements:
 
@@ -105,8 +105,7 @@ Maven:
 # I Prepared Requests
 You can find .har and .json file for import to request program. (Authorization information is embedded some files. Check the header.)
 
-Directory: Backend > Requests
-Request Samples:
+Directory: Backend > Requests 
 
 Some Requests:
 
@@ -140,7 +139,7 @@ Some Requests:
 <a href="https://swagger.io/"><img src="https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg" height="100" width="300" alt="Swagger Logo"></a>
 <a href="https://maven.apache.org/" id="bannerRight"><img src="https://maven.apache.org/images/maven-logo-black-on-white.png" height="100" width="350" alt=""></a>
 <a href="https://redux.js.org/"><img src="https://redux.js.org/img/redux.svg" height="100" width="100" alt="Redux Logo"></a>
-<a href="/https://hibernate.org/"> <img alt="Hibernate" height="100" src="https://hibernate.org/images/hibernate-logo.svg" width="300"></a> 
+<a href="https://hibernate.org/"> <img alt="Hibernate" height="100" src="https://hibernate.org/images/hibernate-logo.svg" width="300"></a> 
 
 
 # Application Screenshots
@@ -166,6 +165,8 @@ Login Error Scenerio 4:
 ![LoginError4](/ImagesForReadMe/ApplicationSS/LoginError4.jpg) 
 
 # Frontend Notes
+PS: Frontend NOT FINISHED, I will continue.
+
 PS: You don't have to get node.js if you will not developing front side. I already got React App build and put to backend's resource.
 
 PS: If you will developing front side, delete old builded files from backend side (resource/static) then move new builded files same directory. 
